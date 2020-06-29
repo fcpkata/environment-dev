@@ -1,35 +1,94 @@
+autoUpdate:
+  enabled: false
+  schedule: ""
+bootConfigURL: https://github.com/jenkins-x/jenkins-x-boot-config.git
 cluster:
-  clusterName: ""
-  environmentGitOwner: ""
-  environmentGitPublic: false
-  project: ""
+  clusterName: tf-jx-lasting-anemone
+  devEnvApprovers:
+  - siddhi
+  - oaparnav
+  - MOUNIKABALIVADA
+  - senth542002
+  - TamilselviJawahar
+  - imran-md06
+  environmentGitOwner: fcpkata
+  environmentGitPublic: true
+  gitKind: github
+  gitName: github
+  gitServer: https://github.com
+  namespace: jx
+  project: fcpkata
   provider: gke
-  zone: ""
-gitops: true
+  registry: gcr.io
+  vaultName: tf-jx-lasting-anemone
+  vaultSAName: tf-jx-lasting-anemone-vt
+  zone: us-central1-a
 environments:
-- key: dev
-- key: staging
-- key: production
+- ingress:
+    domain: 35.224.175.156.nip.io
+    externalDNS: false
+    namespaceSubDomain: -jx.
+    tls:
+      email: ""
+      enabled: false
+      production: true
+  key: dev
+  repository: environment-dev
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: staging
+  repository: environment-staging
+- ingress:
+    domain: ""
+    externalDNS: false
+    namespaceSubDomain: ""
+    tls:
+      email: ""
+      enabled: false
+      production: false
+  key: production
+  repository: environment-production
+gitops: true
 ingress:
-  domain: ""
+  domain: 35.224.175.156.nip.io
   externalDNS: false
+  namespaceSubDomain: -jx.
   tls:
     email: ""
     enabled: false
-    production: false
+    production: true
 kaniko: true
-secretStorage: local
+repository: nexus
+secretStorage: vault
 storage:
+  backup:
+    enabled: false
+    url: ""
   logs:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://logs-tf-jx-lasting-anemone-5b0be0e8de0d
   reports:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://reports-tf-jx-lasting-anemone-5b0be0e8de0d
   repository:
-    enabled: false
-    url: ""
+    enabled: true
+    url: gs://repository-tf-jx-lasting-anemone-5b0be0e8de0d
+vault:
+  bucket: vault-tf-jx-lasting-anemone-5b0be0e8de0d
+  key: crypto-key-tf-jx-lasting-anemone-5b0be0e8de0d
+  keyring: keyring-tf-jx-lasting-anemone-5b0be0e8de0d
+  name: tf-jx-lasting-anemone
+  serviceAccount: tf-jx-lasting-anemone-vt
+velero:
+  schedule: ""
+  ttl: ""
 versionStream:
-  ref: "master"
+  ref: v1.0.516
   url: https://github.com/jenkins-x/jenkins-x-versions.git
 webhook: lighthouse

@@ -1,0 +1,10 @@
+adminUser:
+  password: vault:tf-jx-lasting-anemone/adminUser:password
+  username: rainfall
+enableDocker: false
+pipelineUser:
+  email: siddharta@silverstripesoftware.in
+  token: vault:tf-jx-lasting-anemone/pipelineUser:token
+  username: katabot
+prow:
+  hmacToken: vault:tf-jx-lasting-anemone/prow:hmacToken

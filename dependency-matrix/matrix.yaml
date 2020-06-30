@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: fcpkata
+  repo: user
+  url: https://github.com/fcpkata/user.git
+  version: ""
+  versionURL: ""

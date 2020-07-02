@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: fcpkata
+    provider: github
+    repository: inventory
+  name: fcpkata-inventory
+spec:
+  description: Imported application for fcpkata/inventory
+  httpCloneURL: https://github.com/fcpkata/inventory.git
+  org: fcpkata
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: inventory
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/fcpkata/inventory.git

@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: fcpkata
+    provider: github
+    repository: catalog
+  name: fcpkata-catalog
+spec:
+  description: Imported application for fcpkata/catalog
+  httpCloneURL: https://github.com/fcpkata/catalog.git
+  org: fcpkata
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: catalog
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/fcpkata/catalog.git

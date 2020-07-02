@@ -5,3 +5,9 @@ dependencies:
   url: https://github.com/fcpkata/user.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: fcpkata
+  repo: catalog
+  url: https://github.com/fcpkata/catalog.git
+  version: ""
+  versionURL: ""

@@ -11,3 +11,9 @@ dependencies:
   url: https://github.com/fcpkata/inventory.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: fcpkata
+  repo: checkout
+  url: https://github.com/fcpkata/checkout.git
+  version: ""
+  versionURL: ""

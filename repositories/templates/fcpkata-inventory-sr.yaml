@@ -1,8 +1,14 @@
 apiVersion: jenkins.io/v1
 kind: SourceRepository
 metadata:
+  annotations:
+    jenkins.io/last-build-number-for-master: "4"
+    jenkins.io/last-build-number-for-pr-1: "4"
   creationTimestamp: null
   labels:
+    jenkins.io/chart-release: repos
+    jenkins.io/namespace: jx
+    jenkins.io/version: "3"
     owner: fcpkata
     provider: github
     repository: inventory

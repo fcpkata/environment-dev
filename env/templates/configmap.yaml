@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: endpoints
+data:
+  userService: http://user
+  catalogService: http://catalog
+  inventoryService: http://inventory
+  checkoutService: http://checkout

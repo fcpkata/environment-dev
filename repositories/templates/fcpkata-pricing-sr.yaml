@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: fcpkata
+    provider: github
+    repository: pricing
+  name: fcpkata-pricing
+spec:
+  description: Imported application for fcpkata/pricing
+  httpCloneURL: https://github.com/fcpkata/pricing.git
+  org: fcpkata
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: pricing
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/fcpkata/pricing.git

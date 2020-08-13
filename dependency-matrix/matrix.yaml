@@ -17,3 +17,9 @@ dependencies:
   url: https://github.com/fcpkata/checkout.git
   version: ""
   versionURL: ""
+- host: github.com
+  owner: fcpkata
+  repo: pricing
+  url: https://github.com/fcpkata/pricing.git
+  version: ""
+  versionURL: ""
